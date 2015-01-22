@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.mysterycode.wcf.googleanalytics" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Google Analytics Integration]]></packagename>
+		<packagename language="de"><![CDATA[Google Analytics Integration]]></packagename>
+		<packagedescription><![CDATA[]]></packagedescription>
+		<packagedescription language="de"><![CDATA[]]></packagedescription>
+		<version>1.0.0</version>
+		<date>2014-06-17</date>
+	</packageinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0"><![CDATA[com.woltlab.wcf]]></requiredpackage>
+	</requiredpackages>
+	
+	<authorinformation>
+		<author><![CDATA[Florian Gail]]></author>
+		<authorurl><![CDATA[http://www.mysterycode.de]]></authorurl>
+	</authorinformation>
+	
+	<instructions type="install">
+		<instruction type="option">option.xml</instruction>
+		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+</package>
