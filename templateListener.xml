@@ -15,7 +15,8 @@
 		ga('create', '{GOOGLE_ANALYTICS_ID}');
 		{if GOOGLE_ANALYTICS_ANONYMIZE}ga('set', 'anonymizeIp', true);{/if}
 		ga('require', 'displayfeatures');
-		ga('send', 'pageview');{/if}]]></templatecode>
+		ga('send', 'pageview');
+		{/if}]]></templatecode>
 		</templatelistener>
 	</import>
 </data>

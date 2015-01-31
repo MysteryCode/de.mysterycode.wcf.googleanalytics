@@ -3,10 +3,10 @@
 	<packageinformation>
 		<packagename><![CDATA[Google Analytics Integration]]></packagename>
 		<packagename language="de"><![CDATA[Google Analytics Integration]]></packagename>
-		<packagedescription><![CDATA[]]></packagedescription>
-		<packagedescription language="de"><![CDATA[]]></packagedescription>
-		<version>1.0.0</version>
-		<date>2014-06-17</date>
+		<packagedescription><![CDATA[Simple integration of Google Analytics]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Einfache Integration von Google Analytics]]></packagedescription>
+		<version>1.0.1</version>
+		<date>2015-01-31</date>
 	</packageinformation>
 	
 	<requiredpackages>
@@ -22,5 +22,8 @@
 		<instruction type="option">option.xml</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+	<instructions type="update" fromversion="1.0.0">
+		<instruction type="templateListener">templateListener.xml</instruction>
 	</instructions>
 </package>
