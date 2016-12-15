@@ -5,13 +5,17 @@
 		<packagename language="de"><![CDATA[Google Analytics Integration]]></packagename>
 		<packagedescription><![CDATA[Simple integration of Google Analytics]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Einfache Integration von Google Analytics]]></packagedescription>
-		<version>1.0.1</version>
-		<date>2015-01-31</date>
+		<version>1.0.2</version>
+		<date>2015-12-15</date>
 	</packageinformation>
 	
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0"><![CDATA[com.woltlab.wcf]]></requiredpackage>
+		<requiredpackage minversion="3.0.0 RC 1"><![CDATA[com.woltlab.wcf]]></requiredpackage>
 	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="3.1.0 Alpha 1"><![CDATA[com.woltlab.wcf]]></excludedpackage>
+	</excludedpackages>
 	
 	<authorinformation>
 		<author><![CDATA[Florian Gail]]></author>
@@ -19,11 +23,14 @@
 	</authorinformation>
 	
 	<instructions type="install">
-		<instruction type="option">option.xml</instruction>
-		<instruction type="templateListener">templateListener.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
+		<instruction type="option" />
+		<instruction type="templateListener" />
+		<instruction type="language" />
 	</instructions>
 	<instructions type="update" fromversion="1.0.0">
-		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="templateListener" />
+	</instructions>
+	<instructions type="update" fromversion="1.0.1">
+		<instruction type="templateListener" />
 	</instructions>
 </package>

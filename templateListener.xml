@@ -3,7 +3,7 @@
 	<import>
 		<templatelistener name="googleAnalytics">
 			<environment>user</environment>
-			<templatename>headInclude</templatename>
+			<templatename>headIncludeJavaScript</templatename>
 			<eventname>javascriptInit</eventname>
 			<templatecode><![CDATA[{if GOOGLE_ANALYTICS_ENABLE && GOOGLE_ANALYTICS_ID}
 		(function(i,s,o,g,r,a,m){
