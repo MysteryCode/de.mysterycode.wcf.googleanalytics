@@ -3,7 +3,6 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.general.page.ganalytics"><![CDATA[Google Analytics]]></item>
 		
-		<item name="wcf.acp.option.google_analytics_enable"><![CDATA[Enable Google Analytics]]></item>
 		<item name="wcf.acp.option.google_analytics_id"><![CDATA[Tracking-ID]]></item>
 		<item name="wcf.acp.option.google_analytics_anonymize"><![CDATA[Anonymize IPs]]></item>
 	</category>
