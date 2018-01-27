@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.mysterycode.wcf.googleanalytics" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+<package name="de.mysterycode.wcf.googleanalytics" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Google Analytics Integration]]></packagename>
 		<packagename language="de"><![CDATA[Google Analytics Integration]]></packagename>
 		<packagedescription><![CDATA[Simple integration of Google Analytics]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Einfache Integration von Google Analytics]]></packagedescription>
 		<version>1.0.3</version>
-		<date>2017-09-03</date>
+		<date>2018-01-27</date>
 	</packageinformation>
 	
 	<requiredpackages>
 		<requiredpackage minversion="3.0.0"><![CDATA[com.woltlab.wcf]]></requiredpackage>
 	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="3.2.0 Alpha 1"><![CDATA[com.woltlab.wcf]]></excludedpackage>
-	</excludedpackages>
+
+	<compatibility>
+		<api version="2018" />
+		<api version="2017" />
+	</compatibility>
 	
 	<authorinformation>
 		<author><![CDATA[Florian Gail]]></author>
-		<authorurl><![CDATA[http://www.mysterycode.de]]></authorurl>
+		<authorurl><![CDATA[https://www.mysterycode.de]]></authorurl>
 	</authorinformation>
 	
 	<instructions type="install">
 		<instruction type="option" />
 		<instruction type="templateListener" />
+		<instruction type="userGroupOption" />
 		<instruction type="language" />
 	</instructions>
 
 	<instructions type="update" fromversion="1.0.0">
 		<instruction type="option" />
 		<instruction type="templateListener" />
+		<instruction type="userGroupOption" />
+		<instruction type="language" />
 	</instructions>
 	<instructions type="update" fromversion="1.0.1">
 		<instruction type="option" />
 		<instruction type="templateListener" />
+		<instruction type="userGroupOption" />
+		<instruction type="language" />
 	</instructions>
 	<instructions type="update" fromversion="1.0.2">
 		<instruction type="option" />
 		<instruction type="templateListener" />
+		<instruction type="userGroupOption" />
+		<instruction type="language" />
 	</instructions>
 </package>
