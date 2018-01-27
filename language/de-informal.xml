@@ -6,4 +6,7 @@
 		<item name="wcf.acp.option.google_analytics_id"><![CDATA[Tracking-ID]]></item>
 		<item name="wcf.acp.option.google_analytics_anonymize"><![CDATA[IPs anonymisieren]]></item>
 	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.profile.skipGoogleAnalytics"><![CDATA[Google Analytics für diese Gruppe deaktivieren]]></item>
+	</category>
 </language>
