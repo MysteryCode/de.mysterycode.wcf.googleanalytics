@@ -9,4 +9,7 @@
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.user.profile.skipGoogleAnalytics"><![CDATA[Disable Google Analytics for this UserGroup]]></item>
 	</category>
+	<category name="wcf.ga">
+		<item name="wcf.ga.disabled"><![CDATA[Google Analytics has been disabled for this browser on this machine until 31.12.2099. Please keep in mind that this setting will be lost if the cookie is deleted. This can even happen by closing your browser; please check your systems's configuration.]]></item>
+	</category>
 </language>
