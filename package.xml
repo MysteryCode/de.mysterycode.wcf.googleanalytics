@@ -5,8 +5,8 @@
 		<packagename language="de"><![CDATA[Google Analytics Integration]]></packagename>
 		<packagedescription><![CDATA[Simple integration of Google Analytics]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Einfache Integration von Google Analytics]]></packagedescription>
-		<version>1.0.3</version>
-		<date>2018-01-27</date>
+		<version>1.0.4</version>
+		<date>2018-04-26</date>
 	</packageinformation>
 	
 	<requiredpackages>
@@ -43,6 +43,12 @@
 		<instruction type="language" />
 	</instructions>
 	<instructions type="update" fromversion="1.0.2">
+		<instruction type="option" />
+		<instruction type="templateListener" />
+		<instruction type="userGroupOption" />
+		<instruction type="language" />
+	</instructions>
+	<instructions type="update" fromversion="1.0.3">
 		<instruction type="option" />
 		<instruction type="templateListener" />
 		<instruction type="userGroupOption" />
