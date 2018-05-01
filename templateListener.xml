@@ -5,7 +5,7 @@
 			<environment>user</environment>
 			<templatename>headIncludeJavaScript</templatename>
 			<eventname>javascriptInclude</eventname>
-			<templatecode><![CDATA[{if GOOGLE_ANALYTICS_ID && !$__wcf->session->getPermission('user.profile.skipGoogleAnalytics')}
+			<templatecode><![CDATA[{if GOOGLE_ANALYTICS_ID && !$__wcf->session->getPermission('user.profile.skipGoogleAnalytics') && $gaApplication|isset}
 			<script data-relocate="true">
 var disableStr = 'ga-disable-{GOOGLE_ANALYTICS_ID}';
 if (document.cookie.indexOf(disableStr + '=true') > -1) { window[disableStr] = true; }
@@ -17,23 +17,10 @@ else {
 	ga('require', 'displayfeatures');
 	ga('send', 'pageview');
 }
-function gaOptout() { document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain={$__wcf->activeApplication->cookieDomain};'; window[disableStr] = true; alert('{lang}wcf.ga.disabled{/lang}'); }
+function gaOptout() { document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain={$gaApplication};'; window[disableStr] = true; alert('{lang}wcf.ga.disabled{/lang}'); }
 </script>
 {/if}]]></templatecode>
 			<options>google_analytics_id</options>
 		</templatelistener>
 	</import>
-	<delete>
-		<templatelistener name="googleAnalyticsJSFile">
-			<environment>user</environment>
-			<templatename>headIncludeJavaScript</templatename>
-			<eventname>javascriptInclude</eventname>
-		</templatelistener>
-
-		<templatelistener name="googleAnalyticsJSInclude">
-			<environment>user</environment>
-			<templatename>headIncludeJavaScript</templatename>
-			<eventname>javascriptInclude</eventname>
-		</templatelistener>
-	</delete>
 </data>

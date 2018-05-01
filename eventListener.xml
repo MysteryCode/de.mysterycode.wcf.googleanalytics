@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/eventListener.xsd">
+	<import>
+		<eventlistener name="googleAnalyticsApplicationLegacyP">
+			<environment>user</environment>
+			<eventclassname>wcf\page\AbstractPage</eventclassname>
+			<eventname>assignVariables</eventname>
+			<inherit>1</inherit>
+			<options>google_analytics_id</options>
+			<listenerclassname>wcf\system\event\listener\GACookieDomainEventListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>
